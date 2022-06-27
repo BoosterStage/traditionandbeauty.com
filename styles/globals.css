@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.text-gold { color: #c8a545; }
+.text-blue { color: #212a31; }
+.bg-gold { background-color: #c8a545; }
+.bg-blue { background-color: #212a31; }
