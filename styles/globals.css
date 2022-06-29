@@ -17,5 +17,19 @@ a {
 
 .text-gold { color: #c8a545; }
 .text-blue { color: #212a31; }
-.bg-gold { background-color: #c8a545; }
+.bg-gold { background-color: #c8a545; border-color: #c8a545;}
+.bg-gold:hover { background-color: #b58b18; border-color: #b58b18;}
 .bg-blue { background-color: #212a31; }
+
+
+/* reveal  */
+.reveal {
+  position: relative;
+  transform: translateY(1em);
+  opacity: 0;
+  transition: transform 2s ease, opacity 2s ease;
+}
+.reveal.active {
+  transform: translateY(0em);
+  opacity: 1;
+}
