@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capital Campaign | St. Joseph the Worker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossOrigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossOrigin="anonymous" />
   <link rel="icon" href="/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />        
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
   <script>
     window.onload = function (e) {
       console.log('...loaded')
@@ -17,14 +19,14 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    function clicked () {
+    function clicked() {
       console.log('clicked...')
       if (document.getElementById("navbarResponsive").classList.contains("show")) {
         document.getElementById("navbarResponsive").classList.remove("show")
       }
       else {
-          // document.getElementById("navbarResponsive").classList.add("show")
-      }    
+        // document.getElementById("navbarResponsive").classList.add("show")
+      }
     }
     window.addEventListener('scroll', reveal)
 
@@ -44,454 +46,566 @@
       }
     }    
   </script>
-  <script src="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign/embed.js?form=pledge" async></script>
+  <script src="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign/embed.js?form=pledge"
+    async></script>
 
   <style>
-@font-face {
-  font-family: 'book-antiqua';
-  src: url('fonts/book-antiqua.ttf');
-}
-html,
-body {
-  color: '#121d23';
-  padding: 0;
-  margin: 0;
-  font-family: 'book-antiqua', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+    @font-face {
+      font-family: 'book-antiqua';
+      src: url('fonts/book-antiqua.ttf');
+    }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+    html,
+    body {
+      color: '#121d23';
+      padding: 0;
+      margin: 0;
+      font-family: 'book-antiqua', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.text-gold { color: #c8a547; }
-.text-blue { color: #121d23; }
-.bg-gold { background-color: #c8a547; border-color: #c8a547;}
-/* .text-gold:hover { background-color: #ddc995; border-color: #ddc995;} */
-.bg-blue { background-color: #121d23; }
-.border-gold { border-color: #c8a547; }
+    * {
+      box-sizing: border-box;
+    }
 
-.btn:hover {
-  background-color: #ddc995;
-  border-color: #ddc995;
-}
-/* reveal  */
-.reveal {
-  position: relative;
-  transform: translateY(1em);
-  opacity: 0;
-  transition: transform 2s ease, opacity 2s ease;
-}
-.reveal.active {
-  transform: translateY(0em);
-  opacity: 1;
-}    
+    .text-gold {
+      color: #c8a547;
+    }
+
+    .text-blue {
+      color: #121d23;
+    }
+
+    .bg-gold {
+      background-color: #c8a547;
+      border-color: #c8a547;
+    }
+
+    /* .text-gold:hover { background-color: #ddc995; border-color: #ddc995;} */
+    .bg-blue {
+      background-color: #121d23;
+    }
+
+    .border-gold {
+      border-color: #c8a547;
+    }
+
+    .btn:hover {
+      background-color: #ddc995;
+      border-color: #ddc995;
+    }
+
+    /* reveal  */
+    .reveal {
+      position: relative;
+      transform: translateY(1em);
+      opacity: 0;
+      transition: transform 2s ease, opacity 2s ease;
+    }
+
+    .reveal.active {
+      transform: translateY(0em);
+      opacity: 1;
+    }
+
     .masthead {
       height: 100vh;
     }
+
     #bg-video {
       position: absolute;
       object-fit: cover;
       width: 100vw;
       height: 100vh;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       filter: brightness(0.7);
     }
+
     .masthead .container {
-      
+
       position: relative;
     }
-    h3 { padding-bottom:5px; }
-    section h2, h1 { 
+
+    h3 {
+      padding-bottom: 5px;
+    }
+
+    section h2,
+    h1 {
       font-size: 6em;
       /* font-family: 'Cormorant Garamond' */
     }
+
     .text-fancy {
       /* font-family: 'Cormorant Garamond' */
     }
-    h1 { font-size: 4em; }
-    nav.reveal-custom {
-      background: rgba(18,29,35,1);
+
+    h1 {
+      font-size: 4em;
     }
+
+    nav.reveal-custom {
+      background: rgba(18, 29, 35, 1);
+    }
+
     .section-spacing {
       margin-top: 120px;
     }
+
     .picframe {
-      position:relative;
-      border:1px solid #ccc;
-      padding:15px;
-      background-color:white;
-      border-radius:15px;
+      position: relative;
+      border: 1px solid #ccc;
+      padding: 15px;
+      background-color: white;
+      border-radius: 15px;
     }
+
     .picframe img {
       border-radius: 15px;
     }
+
     .phase {
       margin: 90px 0;
     }
+
     .phase ul {
       margin: 30px 0;
     }
+
     .phase ul li {
       padding: 5px 0;
     }
+
     .astheworld {
       position: absolute;
-      top:0;left:0;right:0;
+      top: 0;
+      left: 0;
+      right: 0;
       padding: 0px 0 400px 0;
       margin: 100px 0;
       zIndex: 0;
     }
+
     .present3child {
       margin-bottom: 140px;
     }
+
     .future-image-mobile {
-      bottom:-150px;
+      bottom: -150px;
     }
+
     button {
       box-shadow: none !important;
     }
+
     button:focus {
       outline: none;
       box-shadow: none;
     }
-    @media (min-width: 992px) { 
+
+    @media (min-width: 992px) {
       .present3child {
         margin-bottom: 0px;
-      }      
-      .astheworld { padding: 200px 0 400px 0; }
-      section h2, h1 { 
+      }
+
+      .astheworld {
+        padding: 200px 0 400px 0;
+      }
+
+      section h2,
+      h1 {
         font-size: 8em;
         font-family: 'Cormorant Garamond'
       }
-      h1 { font-size: 6em; }
+
+      h1 {
+        font-size: 6em;
+      }
     }
 
     .nav-link {
       font-size: 2em;
-      padding:0;
+      padding: 0;
     }
-
-  </style>  
+  </style>
 </head>
+
 <body id="page-top">
-  <a href="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign" target="_blank" data-memberdrive-donate="true" class="btn btn-lg bg-gold text-white"
-    style="position: fixed; bottom:60px; right: 60px; z-index:99; box-shadow: 2px 4px 10px rgba(0,0,0,0.5);"
-  >Pledge Now</a>
+  <a href="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign" target="_blank"
+    data-memberdrive-donate="true" class="btn btn-lg bg-gold text-white"
+    style="position: fixed; bottom:60px; right: 60px; z-index:99; box-shadow: 2px 4px 10px rgba(0,0,0,0.5);">Pledge
+    Now</a>
   <div>
     <nav class="reveal-custom navbar navbar-dark fixed-top py-2" id="mainNav">
-        <div class="container px-4 px-lg-5" style="position: relative;">
-          <a class="navbar-brand" href="#page-top"><img src="img/logo-small.png" style="width:220px; padding:2px;" /></a>
-          <div style="right:15px;top:50px;">
-          <button style="" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse bg-gold text-fancy" id="navbarResponsive"
-            style="position:absolute; right:40px; top:8px; padding:30px 30px 60px 30px; width:260px; box-shadow: -10px 7px rgba(0,0,0,0.3); 
+      <div class="container px-4 px-lg-5" style="position: relative;">
+        <a class="navbar-brand" href="#page-top"><img src="img/logo-small.png" style="width:220px; padding:2px;" /></a>
+        <div style="right:15px;top:50px;">
+          <button style="" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse bg-gold text-fancy" id="navbarResponsive" style="position:absolute; right:40px; top:8px; padding:30px 30px 60px 30px; width:260px; box-shadow: -10px 7px rgba(0,0,0,0.3); 
             background: url('img/menu-bg.jpg') no-repeat #c8a547; 
             background-position: bottom;
-            background-size: cover;"
-          >
-            <button style="border:none;position: absolute; right:5px;top:15px;" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <div style="display:flex; flex-direction: row;" class="text-blue">Close <div style="margin:-2px 0 0 10px; padding:5px; border-radius:50%; width:25px; height:25px; display:flex; justify-content: center; align-items: center;" class="bg-blue text-gold">✕</div></div>
+            background-size: cover;">
+            <button style="border:none;position: absolute; right:5px;top:15px;"
+              class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <div style="display:flex; flex-direction: row;" class="text-blue">Close <div
+                  style="margin:-2px 0 0 10px; padding:5px; border-radius:50%; width:25px; height:25px; display:flex; justify-content: center; align-items: center;"
+                  class="bg-blue text-gold">✕</div>
+              </div>
             </button>
             <ul class="navbar-nav  my-2 my-lg-0 text-white pt-4">
-                <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#past">Past</a></li>
-                <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#present">Present</a></li>
-                <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#future">Future</a></li>
-                <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#pray">Pray with us</a></li>
-                <li class="nav-item"><a href="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign" target="_blank" data-memberdrive-donate="true" class="nav-link text-white" href="#support">Pledge now</a></li>
+              <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#past">Past</a></li>
+              <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#present">Present</a></li>
+              <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#future">Future</a></li>
+              <li class="nav-item"><a onclick="clicked()" class="nav-link text-white" href="#pray">Pray with us</a></li>
+              <li class="nav-item"><a href="https://memberdrive.org/st-joseph-the-worker-parish/capital-campaign"
+                  target="_blank" data-memberdrive-donate="true" class="nav-link text-white" href="#support">Pledge
+                  now</a></li>
             </ul>
-            <div style="border-top: 1px solid white; padding-top:20px; margin-top:20px; color:white;">Our Latin Mass community is growing and we need your help.</div>
-          </div>
+            <div style="border-top: 1px solid white; padding-top:20px; margin-top:20px; color:white;">Our Latin Mass
+              community is growing and we need your help.</div>
           </div>
         </div>
+      </div>
     </nav>
 
     <header class="masthead" style="background-color:#c8a547">
-      <video id="bg-video" 
-        muted loop playsinline 
-        preload="false"
-        autoPlay="false"
-        poster="img/vid-poster.jpg"
-      >
+      <video id="bg-video" muted loop playsinline preload="false" autoPlay="false" poster="img/vid-poster.jpg">
         <source src="img/bg-vid.mp4" type="video/mp4" />
       </video>
-      
+
       <div class="container px-4 px-lg-5 h-100">
-          <div id="tradition-overlay" class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-              <div class="col-md-8 align-self-end">
-                  <h1 class="text-gold font-weight-bold">Tradition &amp; Beauty</h1>
-                  <hr class="divider text-white" />
-              </div>
-              <div class="col-md-8 align-self-baseline">
-                  <!-- <p class="text-white mb-5">October 1st, 2022</p> -->
-                  <p class="text-white mb-5" style="font-size:1.4em; ">Our Latin Mass community is growing and we need your help.</p>
-                  <!-- <a class="btn btn-primary btn-xl bg-gold" href="#support">Support Us</a> -->
-              </div>
+        <div id="tradition-overlay"
+          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+          <div class="col-md-8 align-self-end">
+            <h1 class="text-gold font-weight-bold">Tradition &amp; Beauty</h1>
+            <hr class="divider text-white" />
           </div>
-      </div>
-    </header>     
-    
-<div>
-  
-  <div class="bg-gold" style="padding:8px;"></div>
-  
-  <section id="priority">
-    <div class="container pb-5">
-      <div class="row justify-content-center my-md-5 py-5 text-fancy">
-        <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0"><p class="text-center" style="font-size:6em">1</p><p>Since 2003, the Fraternity of St. Peter has offered the Tridentine latin mass in the Diocese of Tyler.</p></div>
-        <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0"><p class="text-center" style="font-size:6em">2</p><p>Our community has grown rapidly, exceeding the capacity of our current site. Parking and seating are no longer sufficient to accommodate all who would like to come.</p></div>
-        <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0"><p class="text-center" style="font-size:6em">3</p><p>The Diocese of Tyler is supportive of our mission and the land has been secured, giving us the opportunity to build something enduring for generations yet to come. Will you help us?</p></div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="past" style="padding:15px 0; background-image:linear-gradient(#f7f7f7, #fff);">
-    <div class="container">
-      <div style="margin: 120px 0" class="row justify-content-center">
-        <div class="col-md-6">
-          <h2>Past</h2>
-          <p>The story of St. Joseph the Worker begins in 2003 in the Diocese of Tyler. Bishop Alvaro Corrada invited and welcomed the Priestly Fraternity of St. Peter to Tyler as a mission church of the Cathedral.</p>
-          <p>From 2003 to 2006, the Extraordinary Form of the Mass was celebrated within the Diocesan Chancery Building in St. Paul&apos;s Chapel. In 2006, Bishop Corrada approved the acquisition of the current property that we now know and love and made St. Joseph the Worker a parish of the Diocese of Tyler.</p>
-        </div>
-        <div class="d-none d-md-block col-md-3 col-xl-2">
-          <div style="position:relative; left:0px"><img src="img/past/choir.jpg" class="img-fluid" alt="" /></div>
-          <div style="position:relative;left:30px;top:-30px"><img src="img/past/crucifix.jpg" class="img-fluid" alt="" /></div>
-          <div style="position:relative;left:0px;top:-60px"><img src="img/past/procession.jpg" class="img-fluid" alt="" /></div>
-        </div>
-        <div class="d-md-none col-md-3 col-xl-2 d-flex justify-content-center mt-4">
-          <div><img src="img/past/choir.jpg" class="img-fluid" alt="" /></div>
-          <div style="margin:0 8px;"><img src="img/past/crucifix.jpg" class="img-fluid"  alt="" /></div>
-          <div><img src="img/past/procession.jpg" class="img-fluid" alt="" /></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <div style="background: url('img/detail.png') repeat-x; height:30px; background-position: bottom; "></div>
-  <div class="bg-blue" style="height:45px; width:100%;"></div>
-  
-  
-  <section id="present" style="background: url('img/present/jtw.jpg') center; background-size:cover;">
-    <div class="container-fluid " style="height:800px">
-      <div class="row justify-content-center">
-        <div class="col-md-6 mt-5 pt-5 text-white text-center">
-          <h2>Present</h2>
-          <p class="display-6" style="margin-top:250px"><span class="reveal" style="white-space: nowrap;" data-reveal="100">As the world darkens,</span> <span class="reveal" style="white-space: nowrap;" data-reveal="400">people seek the light.</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="present2" style="background-color: black;">
-    <div class="container-fluid text-white pb-5" style="background-color:#0d0e10">
-      <div class="row mb-5 py-5 justify-content-center">
-        <div class=" col-md-4 col-sm-6">
-          <h3>East Texas and St. Joseph the Worker have become the beacon of light and hope for a growing number of families.</h3>
-          <p>With time, the community of St. Joseph the Worker has grown. In the past year, that growth has been exponential.</p>
-        </div>
-        <div class="offset-md-1 col-sm-3 d-none d-sm-block">
-          <img class="" src="img/present/mary-statue.jpg" style="width:100%;border-radius:15px" alt="" />
-        </div>
-      </div>
-      <div class="row mb-5 pb-5 justify-content-center">
-        <div class=" col-md-4 col-sm-6">
-          <h3>Our growth has exceeded the capacity of our current site.</h3>
-          <p>Parking and seating are no longer sufficient to accommodate all who would like to come. Our capacity, or lack thereof, has become our greatest limitation.</p>
-          <p>Our beloved campus is also showing the scars of time. Rust stains decorate what was once new. The foundation and structural integrity of our parish hall is buckling under years of weather and wear. Aging pipes have leaked and broken, causing floods, water damage and mold.</p>
-          <p>Despite these issues, our church is still beautiful. It is rich with memories and love from a devoted community for which it was the soil. We must continue to honor and respect it. It remains the House of God and the Gate of Heaven.</p>
-        </div>
-        <div class="offset-md-1 col-sm-3 d-none d-sm-block">
-          <img class="" src="img/present/tower.jpg" style="width:100%; border-radius:15px" alt="" />
-        </div>
-      </div>
-      <div class="row mb-5 pb-5 justify-content-center">
-        <div class=" col-md-4 col-sm-6">
-          <h3>But now we have both the opportunity and responsibility to build anew.</h3>
-          <p>To build a Church whose beauty gives due honor to our Priest, Prophet, and King; whose spaciousness is welcoming to friends and strangers alike. To build a new church and parish hall that will allow us to continue to plant the seeds of our community, cultivate it, and watch it thrive. To build up our beacon and shine brightly.</p>
-        </div>
-        <div class="offset-md-1 col-sm-3 d-none d-sm-block">
-          <img class="" src="img/present/psalm.jpg" style="width:100%; border-radius:15px" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="present3">
-    <div class="container-fluid py-5 py-md-0 px-0 present3child" style="background-image:linear-gradient(#0d0e10, white); position:relative;">
-      <img
-        src="img/future/sjtw-wc.jpg"
-        style="z-index:1; width:100%;"
-        class="reveal img-fluid future-image d-none d-sm-block"
-        data-reveal="900" alt=""
-      />          
-      <img
-        src="img/future/sjtw-wc.jpg"
-        style="z-index:1; width:100%;"
-        class="reveal img-fluid future-image-mobile d-sm-none"
-        data-reveal="300" alt=""
-      />          
-      <div class="row astheworld text-center justify-content-center">
-        <div class="text-white">
-          <p id="future" class="display-6" ><span class="reveal" data-reveal="50">As the world darkens</span><span class="reveal" data-reveal="300">, our light must shine brighter. . .</span></p>
-        </div>
-      </div>
-    </div>
-  </section>     
-  
-  <section>
-    <div class="container" style="position:relative; z-index:3;">
-      <div class="row" style="margin-top:-180px">
-        <div class="offset-md-1 mb-5 mb-lg-0 col-md-10 col-lg-6 mt-5 mt-md-0" >
-          <h2>Future</h2>
-          <h3>Within our means, without compromising.</h3>
-          <p>The aim of the building committee has been to design and develop a church that addresses our current needs while remaining affordable within the means of our community without compromising on traditional elements and beautiful design. Studio io, a Catholic architectural design firm with experience in traditional design, has been valuable in allowing us to fulfill all three goals.</p>
-        </div>
-        <div class="offset-md-1 col-md-3 d-none d-lg-block">
-          <div class="reveal picframe" data-reveal="300" style="top:-30px; left:-45px;"><img src="img/future/sjtw-wc2.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
-          <div class="reveal picframe" data-reveal="300" style="top:-130px; left:30px;"><img src="img/future/sjtw-wc3.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
-          <div class="reveal picframe" data-reveal="300" style="top:-230px; left:-90px;"><img src="img/future/schematic.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
-        </div>
-  
-        <div class="offset-md-1 col-md-3 d-none d-lg-block">              
-          <div class="reveal picframe" data-reveal="300" style="top:-120px; left:30px;"><img src="img/future/land.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
-          <div class="reveal picframe" data-reveal="300" style="top:-180px; left:90px;"><img src="img/future/map.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
-        </div>
-        <div class="offset-md-1 mb-5 mb-lg-0 col-md-10 col-lg-6" >
-          <h3>Land for the project has been secured.</h3>
-          <p>Seven acres of land located off of highway 110 on the North side of Tyler has been generously donated to the cause. It is in a safer neighborhood surrounded by the homes of Catholic families.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-5 pb-5">
-        <div class="d-lg-none my-5">
-          <img 
-            src="img/future/schematic.jpg"
-            class="img-fluid"
-            alt=""
-          />              
-        </div>
-        <div class="col-lg-4 mb-lg-0" >
-          <h3>Divided into three principle phases.</h3>
-          <p>Conceptually, the project has been divided into phases to provide smaller benchmarks for fundraising. This will allow for flexibility in the construction of the new campus with the ability to adapt its scope to match funds raised. <strong>The more we raise, the more we can build.</strong></p>
-          <p>As it stands, the project is currently divided into three principle phases.</p>
-        </div>
-        <div class="d-none d-lg-block col-lg-6" style="top:-45px; position:relative;">
-          <img 
-            src="img/future/schematic.jpg"
-            class="img-fluid"
-            alt=""
-          />              
-        </div>
-      </div>
-  
-      <div class="row justify-content-center phase">
-        <div class="col-md-8" >
-          <img 
-            src="img/future/phase1.jpg"
-            class="img-fluid"              
-            alt=""
-          /> 
-          <h3><strong>Phase 1: New church building with temporary sanctuary</strong> and no bell tower.</h3>
-          <ul>
-            <li>5,200 sq ft </li>
-            <li>The initial phase of the church seats 300 people, counting 20&quot; per person. By comparison, our current church seats ~100 people using the same calculation.</li>
-            <li>The back wall of the sanctuary is temporary, allowing for continued use of the church during construction of the expansion, minimizing interruption.</li>
-            <li>Two confessionals.</li>
-            <li>Benches/pews with seating in the Narthex for nursing mothers</li>
-            <li>Choir loft.</li>
-          </ul>
-        </div>
-      </div>
-   
-  
-      <div class="row justify-content-center phase">
-        <div class="col-md-8" >
-          <img 
-            src="img/future/phase2.jpg"
-            class="img-fluid"
-            alt=""
-          /> 
-          <h3><strong>Phase 2: Parish hall.</strong></h3>
-          <ul>
-            <li>Main hall for parish events and banquets including weddings.</li>
-            <li>Large commercial kitchen with storage.</li>
-            <li>Office space for clergy business.</li>
-            <li>Two adjacent meeting rooms that can be used for small group functions or classes.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row justify-content-center phase">
-        <div class="col-md-8" > 
-          <img 
-            src="img/future/phase3.jpg"
-            class="img-fluid"
-            alt=""
-          /> 
-          <h3><strong>Phase 3: Full church</strong></h3>
-          <ul>
-            <li>Additional 2,150 sq ft.</li>
-            <li>Full church expansion with a larger nave which seats 450 people</li>
-            <li>Larger, more beautiful sanctuary with greater detail and more expensive material.</li>
-            <li>Bell tower with dedicated baptistry underneath.</li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="row justify-content-center">
-        <div class="col-md-8" >
-
-          <img src="img/phases.jpg" style="width:100%; margin-bottom: 60px;" />
-          <p>Estimated total cost of all three phases is $8 Million. The current priority and most pressing need is to build a new church with more space, so Phase 1 is the primary goal.</p>
-          <p>Bishop Strickland and FSSP leadership are supportive of this plan to build our new church. This outlined plan has been approved by the Bishop and the Diocesan building committee.</p>
-          <p>Now that final approval has been granted, fundraising can begin. We need to raise a minimum of 60% of total building costs to break ground, with the remaining 40% loaned to us from the Diocese to be paid back in no more than 5 years. This 40% must be covered with pledges from donors.</p>
-          <p>A pledge is a non-binding commitment made in good faith. We encourage everyone to consider making a pledge to the campaign for a 3 year period. An abatement of the Diocesan assessment has been granted, so the entirety of the pledge payments will be used for the building campaign.</p>
-          <p>Each family has different financial obligations to consider and all pledges and contributions will be held in the strictest confidence. For the success of this campaign, we ask that families who are financially capable of pledging $25,000, $50,000, $100,000 or more step forward and become leaders of this campaign.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="studio" style="background-image:linear-gradient(#f7f7f7, white); position:relative;">
-    <div class="container section-spacing pt-5">
-      <div class="row justify-content-center pt-5">
-        <div class="col-md-8">
-          <h2>Studio io</h2>
-          <div class="d-flex justify-content-between pb-5">
-            <div style="background: url('img/studio/sio1.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;"></div>
-            <div style="background: url('img/studio/sio2.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;"></div>
-            <div style="background: url('img/studio/sio3.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;"></div>
-            <div style="background: url('img/studio/sio4.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;"></div>
+          <div class="col-md-8 align-self-baseline">
+            <!-- <p class="text-white mb-5">October 1st, 2022</p> -->
+            <p class="text-white mb-5" style="font-size:1.4em; ">Our Latin Mass community is growing and we need your
+              help.</p>
+            <!-- <a class="btn btn-primary btn-xl bg-gold" href="#support">Support Us</a> -->
           </div>
-          <h4>We are a passionate team of faithful Catholic designers.</h4>
-          <p>Founded in 2018, Studio io has assisted over 75 Catholic parishes, dioceses, campus ministries, schools, seminaries, religious communities, retreat centers, and other apostolates with design and consulting for beautifications, renovations, and new construction.</p>
-          <h4>Our mission is beauty and order.</h4>
-          <p>Instaurare Omnia (io) is a latin phrase meaning &apos;to renew all things&apos;. Taken from the papal motto of Pope St. Pius X (Instaurare Omnia in Christo), who paved the way for a great deal of liturgical renewal prior to Vatican II, this phrase acknowledges the original beauty, order, dignity, and purpose of all creation to participate fully in the divine life and love of the Trinity through membership in the Mystical Body of Christ.</p>
-          <h4>Our work is rooted in the Church&apos;s integrated vision for formation.</h4>
-          <p>We incorporate liturgical &amp; mystagogical catechesis into the church&apos;s larger mission of evangelization. Our clients are devoted to providing a transforming encounter with Christ as the basis for renewal in the Church, as well as a commitment to forming disciples and re-establishing a wider culture of beauty as a privileged means for evangelization.</p>
-          <p>WE FOSTER A SPECIAL DEVOTION TO THE HOLY FAMILY, ESPECIALLY VIA MARY, MOTHER OF THE CHURCH AND ST. JOSEPH THE WORKER</p>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="pray" style="background-image:linear-gradient(#f7f7f7, white); position:relative;">
-    <div class="container section-spacing pt-5">
-      <div class="row justify-content-center pt-5">
-        <div class="col-md-8">
-          <h2>Pray with us</h2>
-          <h4>Please join us in praying the St. Joseph Novena daily until the parish is moved into the new building.</h4>
-          <p><a class="btn btn-lg bg-gold text-white my-3" href="https://americaneedsfatima.org/prayers/novena-prayers-to-saint-joseph" target="_blank">Click here to view the St. Joseph Novena</a></p>
-          <p>Our intention prayer: "Obtain for us, O foster father of the Redeemer, our intentions of a new church building for our parish."</p>
-          <img class="w-100 mt-3" src="img/stj.jpg" />
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- <section id="support" style="background-image:linear-gradient(#faf3df, white); position:relative;">
+    <div>
+
+      <div class="bg-gold" style="padding:8px;"></div>
+
+      <!-- <div class="bg-gold" style="padding:8px;"></div> -->
+
+      <section id="priority">
+        <div class="container pb-5">
+          <div class="row justify-content-center my-md-5 py-5 text-fancy">
+            <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0">
+              <p class="text-center" style="font-size:6em">1</p>
+              <p>Since 2003, the Fraternity of St. Peter has offered the Tridentine latin mass in the Diocese of Tyler.
+              </p>
+            </div>
+            <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0">
+              <p class="text-center" style="font-size:6em">2</p>
+              <p>Our community has grown rapidly, exceeding the capacity of our current site. Parking and seating are no
+                longer sufficient to accommodate all who would like to come.</p>
+            </div>
+            <div class="col-sm-8 col-md-4 col-md-3 px-4 pb-5 mb-5 pb-md-0 mb-md-0">
+              <p class="text-center" style="font-size:6em">3</p>
+              <p>The Diocese of Tyler is supportive of our mission and the land has been secured, giving us the
+                opportunity to build something enduring for generations yet to come. Will you help us?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="past" style="padding:15px 0; background-image:linear-gradient(#f7f7f7, #fff);">
+        <div class="container">
+          <div style="margin: 120px 0" class="row justify-content-center">
+            <div class="col-md-6">
+              <h2>Past</h2>
+              <p>The story of St. Joseph the Worker begins in 2003 in the Diocese of Tyler. Bishop Alvaro Corrada
+                invited and welcomed the Priestly Fraternity of St. Peter to Tyler as a mission church of the Cathedral.
+              </p>
+              <p>From 2003 to 2006, the Extraordinary Form of the Mass was celebrated within the Diocesan Chancery
+                Building in St. Paul&apos;s Chapel. In 2006, Bishop Corrada approved the acquisition of the current
+                property that we now know and love and made St. Joseph the Worker a parish of the Diocese of Tyler.</p>
+            </div>
+            <div class="d-none d-md-block col-md-3 col-xl-2">
+              <div style="position:relative; left:0px"><img src="img/past/choir.jpg" class="img-fluid" alt="" /></div>
+              <div style="position:relative;left:30px;top:-30px"><img src="img/past/crucifix.jpg" class="img-fluid"
+                  alt="" /></div>
+              <div style="position:relative;left:0px;top:-60px"><img src="img/past/procession.jpg" class="img-fluid"
+                  alt="" /></div>
+            </div>
+            <div class="d-md-none col-md-3 col-xl-2 d-flex justify-content-center mt-4">
+              <div><img src="img/past/choir.jpg" class="img-fluid" alt="" /></div>
+              <div style="margin:0 8px;"><img src="img/past/crucifix.jpg" class="img-fluid" alt="" /></div>
+              <div><img src="img/past/procession.jpg" class="img-fluid" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div style="background: url('img/detail.png') repeat-x; height:30px; background-position: bottom; "></div>
+      <div class="bg-blue" style="height:45px; width:100%;"></div>
+
+
+      <section id="present" style="background: url('img/present/jtw.jpg') center; background-size:cover;">
+        <div class="container-fluid " style="height:800px">
+          <div class="row justify-content-center">
+            <div class="col-md-6 mt-5 pt-5 text-white text-center">
+              <h2>Present</h2>
+              <p class="display-6" style="margin-top:250px"><span class="reveal" style="white-space: nowrap;"
+                  data-reveal="100">As the world darkens,</span> <span class="reveal" style="white-space: nowrap;"
+                  data-reveal="400">people seek the light.</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="present2" style="background-color: black;">
+        <div class="container-fluid text-white pb-5" style="background-color:#0d0e10">
+          <div class="row mb-5 py-5 justify-content-center">
+            <div class=" col-md-4 col-sm-6">
+              <h3>East Texas and St. Joseph the Worker have become the beacon of light and hope for a growing number of
+                families.</h3>
+              <p>With time, the community of St. Joseph the Worker has grown. In the past year, that growth has been
+                exponential.</p>
+            </div>
+            <div class="offset-md-1 col-sm-3 d-none d-sm-block">
+              <img class="" src="img/present/mary-statue.jpg" style="width:100%;border-radius:15px" alt="" />
+            </div>
+          </div>
+          <div class="row mb-5 pb-5 justify-content-center">
+            <div class=" col-md-4 col-sm-6">
+              <h3>Our growth has exceeded the capacity of our current site.</h3>
+              <p>Parking and seating are no longer sufficient to accommodate all who would like to come. Our capacity,
+                or lack thereof, has become our greatest limitation.</p>
+              <p>Our beloved campus is also showing the scars of time. Rust stains decorate what was once new. The
+                foundation and structural integrity of our parish hall is buckling under years of weather and wear.
+                Aging pipes have leaked and broken, causing floods, water damage and mold.</p>
+              <p>Despite these issues, our church is still beautiful. It is rich with memories and love from a devoted
+                community for which it was the soil. We must continue to honor and respect it. It remains the House of
+                God and the Gate of Heaven.</p>
+            </div>
+            <div class="offset-md-1 col-sm-3 d-none d-sm-block">
+              <img class="" src="img/present/tower.jpg" style="width:100%; border-radius:15px" alt="" />
+            </div>
+          </div>
+          <div class="row mb-5 pb-5 justify-content-center">
+            <div class=" col-md-4 col-sm-6">
+              <h3>But now we have both the opportunity and responsibility to build anew.</h3>
+              <p>To build a Church whose beauty gives due honor to our Priest, Prophet, and King; whose spaciousness is
+                welcoming to friends and strangers alike. To build a new church and parish hall that will allow us to
+                continue to plant the seeds of our community, cultivate it, and watch it thrive. To build up our beacon
+                and shine brightly.</p>
+            </div>
+            <div class="offset-md-1 col-sm-3 d-none d-sm-block">
+              <img class="" src="img/present/psalm.jpg" style="width:100%; border-radius:15px" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="present3">
+        <div class="container-fluid py-5 py-md-0 px-0 present3child"
+          style="background-image:linear-gradient(#0d0e10, white); position:relative;">
+          <img src="img/future/sjtw-wc.jpg" style="z-index:1; width:100%;"
+            class="reveal img-fluid future-image d-none d-sm-block" data-reveal="900" alt="" />
+          <img src="img/future/sjtw-wc.jpg" style="z-index:1; width:100%;"
+            class="reveal img-fluid future-image-mobile d-sm-none" data-reveal="300" alt="" />
+          <div class="row astheworld text-center justify-content-center">
+            <div class="text-white">
+              <p id="future" class="display-6"><span class="reveal" data-reveal="50">As the world darkens</span><span
+                  class="reveal" data-reveal="300">, our light must shine brighter. . .</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container" style="position:relative; z-index:3;">
+          <div class="row" style="margin-top:-180px">
+            <div class="offset-md-1 mb-5 mb-lg-0 col-md-10 col-lg-6 mt-5 mt-md-0">
+              <h2>Future</h2>
+              <h3>Within our means, without compromising.</h3>
+              <p>The aim of the building committee has been to design and develop a church that addresses our current
+                needs while remaining affordable within the means of our community without compromising on traditional
+                elements and beautiful design. Studio io, a Catholic architectural design firm with experience in
+                traditional design, has been valuable in allowing us to fulfill all three goals.</p>
+            </div>
+            <div class="offset-md-1 col-md-3 d-none d-lg-block">
+              <div class="reveal picframe" data-reveal="300" style="top:-30px; left:-45px;"><img
+                  src="img/future/sjtw-wc2.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
+              <div class="reveal picframe" data-reveal="300" style="top:-130px; left:30px;"><img
+                  src="img/future/sjtw-wc3.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
+              <div class="reveal picframe" data-reveal="300" style="top:-230px; left:-90px;"><img
+                  src="img/future/schematic.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
+            </div>
+
+            <div class="offset-md-1 col-md-3 d-none d-lg-block">
+              <div class="reveal picframe" data-reveal="300" style="top:-120px; left:30px;"><img
+                  src="img/future/land.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
+              <div class="reveal picframe" data-reveal="300" style="top:-180px; left:90px;"><img
+                  src="img/future/map.jpg" data-reveal="300" class="img-fluid" alt="" /></div>
+            </div>
+            <div class="offset-md-1 mb-5 mb-lg-0 col-md-10 col-lg-6">
+              <h3>Land for the project has been secured.</h3>
+              <p>Seven acres of land located off of highway 110 on the North side of Tyler has been generously donated
+                to the cause. It is in a safer neighborhood surrounded by the homes of Catholic families.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="d-lg-none my-5">
+              <img src="img/future/schematic.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-4 mb-lg-0">
+              <h3>Divided into three principle phases.</h3>
+              <p>Conceptually, the project has been divided into phases to provide smaller benchmarks for fundraising.
+                This will allow for flexibility in the construction of the new campus with the ability to adapt its
+                scope to match funds raised. <strong>The more we raise, the more we can build.</strong></p>
+              <p>As it stands, the project is currently divided into three principle phases.</p>
+            </div>
+            <div class="d-none d-lg-block col-lg-6" style="top:-45px; position:relative;">
+              <img src="img/future/schematic.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="row justify-content-center phase">
+            <div class="col-md-8">
+              <img src="img/future/phase1.jpg" class="img-fluid" alt="" />
+              <h3><strong>Phase 1: New church building with temporary sanctuary</strong> and no bell tower.</h3>
+              <ul>
+                <li>5,200 sq ft </li>
+                <li>The initial phase of the church seats 300 people, counting 20&quot; per person. By comparison, our
+                  current church seats ~100 people using the same calculation.</li>
+                <li>The back wall of the sanctuary is temporary, allowing for continued use of the church during
+                  construction of the expansion, minimizing interruption.</li>
+                <li>Two confessionals.</li>
+                <li>Benches/pews with seating in the Narthex for nursing mothers</li>
+                <li>Choir loft.</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="row justify-content-center phase">
+            <div class="col-md-8">
+              <img src="img/future/phase2.jpg" class="img-fluid" alt="" />
+              <h3><strong>Phase 2: Parish hall.</strong></h3>
+              <ul>
+                <li>Main hall for parish events and banquets including weddings.</li>
+                <li>Large commercial kitchen with storage.</li>
+                <li>Office space for clergy business.</li>
+                <li>Two adjacent meeting rooms that can be used for small group functions or classes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center phase">
+            <div class="col-md-8">
+              <img src="img/future/phase3.jpg" class="img-fluid" alt="" />
+              <h3><strong>Phase 3: Full church</strong></h3>
+              <ul>
+                <li>Additional 2,150 sq ft.</li>
+                <li>Full church expansion with a larger nave which seats 450 people</li>
+                <li>Larger, more beautiful sanctuary with greater detail and more expensive material.</li>
+                <li>Bell tower with dedicated baptistry underneath.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+
+              <img src="img/phases.jpg" style="width:100%; margin-bottom: 60px;" />
+              <p>Estimated total cost of all three phases is $8 Million. The current priority and most pressing need is
+                to build a new church with more space, so Phase 1 is the primary goal.</p>
+              <p>Bishop Strickland and FSSP leadership are supportive of this plan to build our new church. This
+                outlined plan has been approved by the Bishop and the Diocesan building committee.</p>
+              <p>Now that final approval has been granted, fundraising can begin. We need to raise a minimum of 60% of
+                total building costs to break ground, with the remaining 40% loaned to us from the Diocese to be paid
+                back in no more than 5 years. This 40% must be covered with pledges from donors.</p>
+              <p>A pledge is a non-binding commitment made in good faith. We encourage everyone to consider making a
+                pledge to the campaign for a 3 year period. An abatement of the Diocesan assessment has been granted, so
+                the entirety of the pledge payments will be used for the building campaign.</p>
+              <p>Each family has different financial obligations to consider and all pledges and contributions will be
+                held in the strictest confidence. For the success of this campaign, we ask that families who are
+                financially capable of pledging $25,000, $50,000, $100,000 or more step forward and become leaders of
+                this campaign.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="studio" style="background-image:linear-gradient(#f7f7f7, white); position:relative;">
+        <div class="container section-spacing pt-5">
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-8">
+              <h2>Studio io</h2>
+              <div class="d-flex justify-content-between pb-5">
+                <div
+                  style="background: url('img/studio/sio1.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;">
+                </div>
+                <div
+                  style="background: url('img/studio/sio2.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;">
+                </div>
+                <div
+                  style="background: url('img/studio/sio3.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;">
+                </div>
+                <div
+                  style="background: url('img/studio/sio4.jpg') center; width:120px; height:120px; border-radius:50%; background-size:cover;">
+                </div>
+              </div>
+              <h4>We are a passionate team of faithful Catholic designers.</h4>
+              <p>Founded in 2018, Studio io has assisted over 75 Catholic parishes, dioceses, campus ministries,
+                schools, seminaries, religious communities, retreat centers, and other apostolates with design and
+                consulting for beautifications, renovations, and new construction.</p>
+              <h4>Our mission is beauty and order.</h4>
+              <p>Instaurare Omnia (io) is a latin phrase meaning &apos;to renew all things&apos;. Taken from the papal
+                motto of Pope St. Pius X (Instaurare Omnia in Christo), who paved the way for a great deal of liturgical
+                renewal prior to Vatican II, this phrase acknowledges the original beauty, order, dignity, and purpose
+                of all creation to participate fully in the divine life and love of the Trinity through membership in
+                the Mystical Body of Christ.</p>
+              <h4>Our work is rooted in the Church&apos;s integrated vision for formation.</h4>
+              <p>We incorporate liturgical &amp; mystagogical catechesis into the church&apos;s larger mission of
+                evangelization. Our clients are devoted to providing a transforming encounter with Christ as the basis
+                for renewal in the Church, as well as a commitment to forming disciples and re-establishing a wider
+                culture of beauty as a privileged means for evangelization.</p>
+              <p>WE FOSTER A SPECIAL DEVOTION TO THE HOLY FAMILY, ESPECIALLY VIA MARY, MOTHER OF THE CHURCH AND ST.
+                JOSEPH THE WORKER</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pray" style="background-image:linear-gradient(#f7f7f7, white); position:relative;">
+        <div class="container section-spacing pt-5">
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-8">
+              <h2>Pray with us</h2>
+              <h4>Please join us in praying the St. Joseph Novena daily until the parish is moved into the new building.
+              </h4>
+              <p><a class="btn btn-lg bg-gold text-white my-3"
+                  href="https://americaneedsfatima.org/prayers/novena-prayers-to-saint-joseph" target="_blank">Click
+                  here to view the St. Joseph Novena</a></p>
+              <p>Our intention prayer: "Obtain for us, O foster father of the Redeemer, our intentions of a new church
+                building for our parish."</p>
+              <img class="w-100 mt-3" src="img/stj.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="support" style="background-image:linear-gradient(#faf3df, white); position:relative;">
     <div class="container section-spacing pt-5">
       <div class="row justify-content-center">
         <div class="col-md-8">
@@ -504,14 +618,17 @@ a {
       </div>
     </div>
   </section>       -->
-  
-  <div style="background: url('img/detail.png') repeat-x; height:30px; background-position: bottom; margin-top:90px;"></div>
-  <footer class="bg-blue" style="height:45px;">
-  </footer>
-</div>
+
+      <div
+        style="background: url('img/detail.png') repeat-x; height:30px; background-position: bottom; margin-top:90px;">
+      </div>
+      <footer class="bg-blue" style="height:45px;">
+      </footer>
+    </div>
 
 
 
   </div>
 </body>
+
 </html>
